@@ -1,0 +1,98 @@
+.head .section {
+    width: 100%;
+}
+.head .head-top {
+    height: 34px;
+    line-height: 34px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+.head .head-top-box {
+    width: 1200px;
+    margin-left: 25px;
+}
+.head .head-center-con,
+.head .nav-list {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section .main-foot {
+    width: 1156px;
+    margin: 0 auto;
+}
+.head .head-nav {
+    width: 100%;
+    background-color: #2789ed;
+}
+.head .head-center {
+    width: 100%;
+    background-color: #fff;
+}
+.head .head-center img {
+    width: 137px;
+    height: 56px;
+    margin: 20px 0 17px 12px;
+}
+.head .head-center input {
+    width: 286px;
+    height: 14px;
+    padding: 10px 5px;
+    margin-top: 39px;
+    margin-right:18px;
+    font-size: 12px;
+    border: 2px solid #2789ed;
+    background-color: transparent;
+}
+.head .head-center .btn {
+    width: 80px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #2789ed;
+    color: #fff;
+    border-radius: 5px;
+}
+.head .nav-item {
+    width: 92px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.head .nav-item a {
+    color: #fff;
+    font-size: 18px;
+}
+.head .nav-item:hover {
+    background-color: #237bd5;
+}
+
+.section .main-foot {
+    padding: 28px 22px 15px 22px;
+    background-color: #fff;
+}
+.section .main-foot-tit {
+    color: #ff4800;
+    font-size: 16px;
+}
+.section .friendly-link {
+    margin: 0 32px;
+    /*margin-right: -18px;*/
+}
+.section .friendly-link li {
+    margin-right: 18px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #333;
+}
+/*foot*/
+.foot {
+    width: 100%;
+    height: 112px;
+    line-height: 112px;
+    padding-bottom: 24px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 6px solid #2789ed;
+}
