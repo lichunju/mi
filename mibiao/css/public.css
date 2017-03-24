@@ -60,8 +60,46 @@ ul, ol { padding: 0;}
 	color: #1578dc;
 	font-size: 12px;
 }
-
-
+.home-page .section .trademark-box {
+	margin-top: 20px;
+}
+.home-page .domain-box .trade-item {
+	padding: 10px 10px 6px 10px;
+}
+.home-page .domain-box .trade-item img {
+	width: 275px;
+	height: 104px;
+}
+.home-page .domain-box .trademark-mark {
+	border-right: 1px dotted #797979;
+}
+.home-page .domain-box .trade-item-name {
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.home-page .domain-box .trade-item-price,
+.home-page .domain-box .trade-item-name,
+.home-page .domain-box .trade-item-company-name,
+.home-page .domain-box .trade-item-company-brief {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.home-page .domain-box .mark-left,
+.home-page .domain-box .mark-right {
+	width: 109px;
+	overflow: hidden;
+	padding: 0 5px;
+	font-size: 14px;
+	color: #666;
+}
+.home-page .domain-box .mark-right {
+	width: 125px;
+}
+.home-page .domain-box .trade-item-price {
+	color: #ff0000;
+}
 
 
 
