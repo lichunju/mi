@@ -87,9 +87,13 @@ ul, ol { padding: 0;}
 .home-page .domain-box .trade-item-name,
 .home-page .domain-box .trade-item-company-name,
 .home-page .domain-box .trade-item-company-brief {
+	width: 109px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
 }
 .home-page .domain-box .mark-left,
 .home-page .domain-box .mark-right {
@@ -99,7 +103,9 @@ ul, ol { padding: 0;}
 	font-size: 14px;
 	color: #666;
 }
-.home-page .domain-box .mark-right {
+.home-page .domain-box .mark-right,
+.home-page .domain-box .trade-item-company-name,
+.home-page .domain-box .trade-item-company-brief {
 	width: 125px;
 }
 .home-page .domain-box .trade-item-price {
