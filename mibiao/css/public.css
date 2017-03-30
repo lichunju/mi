@@ -25,7 +25,8 @@ ul, ol { padding: 0;}
 	background: #fff;
 	opacity: 1;
 }
-#b04 .arrow { position: absolute; top: 80px;padding:20px 7px;background-color:#d5d5d4;}
+#b04 .arrow { position: absolute; top: 80px;padding:20px 7px;background-color:#d5d5d4;opacity: .5;}
+#b04 .arrow:hover{opacity: 1;}
 #b04 #al { left: 0;}
 #b04 #ar { right: 0;}
 
@@ -57,11 +58,15 @@ ul, ol { padding: 0;}
 }
 .home-page .section-more {
 	line-height: 42px;
-	color: #1578dc;
+	color: #333;
 	font-size: 12px;
 }
-.home-page .section .trademark-box {
+.home-page .section .trademark-box,
+.home-page .section .other-box {
 	margin-top: 20px;
+}
+.home-page .section .trademark-box {
+	padding-bottom: 11px;
 }
 .home-page .domain-box .trade-list {
 	margin-left: 22px;
@@ -69,7 +74,12 @@ ul, ol { padding: 0;}
 .home-page .domain-box .trade-item {
 	padding: 10px 6px 6px 6px;
 	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.home-page .domain-box .trade-item:nth-of-type(1),
+.home-page .domain-box .trade-item:nth-of-type(2),
+.home-page .domain-box .trade-item:nth-of-type(3) {
+	border-top: none;
 }
 .home-page .domain-box .trade-item img {
 	width: 262px;
@@ -114,16 +124,405 @@ ul, ol { padding: 0;}
 .home-page .trademark-box h3 {
 	margin-bottom: 0;
 }
+.home-page .other-box {
+	background-color: #fff;
+	padding-bottom: 85px;
+}
+.home-page .other-box .other-list {
+	width: 720px;
+	margin: 0 auto;
+}
+.home-page .other-box .domain-name {
+	width: 125px;
+	margin-right: 5px;
+}
+.home-page .other-box .other-items {
+	font-size: 18px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+}
+.home-page .other-box .meaning {
+	width: 269px;
+	margin-right: 5px;
+}
+.home-page .other-box .renewal-time {
+	width: 246px;
+	margin-right: 5px;
+}
+.home-page .other-box .other-item .price {
+	width: 56px;
+	margin-right: 5px;
+	color: #ff0000;
+}
+.home-page .other-item a span {
+	line-height: 48px;
+	height: 48px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333;
+}
+.home-page .other-item {
+	border-bottom: 1px dotted #ccc;
+}
+.home-page .section .section-left {
+	margin-right: 23px;
+}
+.home-page .section .contact-box,
+.home-page .section .latest-deal-box,
+.home-page .section .news-information-box,
+.home-page .section .advert-box {
+	width: 300px;
+	padding: 8px 0 51px 0;
+	margin-bottom: 20px;
+}
+.home-page .section .latest-deal-box {
+	padding-bottom: 68px;
+}
+.home-page .section .news-information-box {
+	padding-bottom: 14px;
+}
+.home-page .contact-box .contact-list {
+	margin-left: 22px;
+}
+.home-page .contact-box .contact-item {
+	position: relative;
+	line-height: 36px;
+	height: 36px;
+	padding-left: 32px;
+	color: #333;
+	font-size: 14px;
+	overflow: hidden;
+}
+.home-page .contact-box .contact-item i {
+	position:absolute;
+	top: 7px;
+	left: 0;
+	width: 25px;
+	height: 21px;
+}
+.home-page .contact-box .contact-item .qq {
+	background: url("../images/qq.png") no-repeat;
+	background-size: 100% 100%;
+}
+.home-page .contact-box .contact-item .weixin {
+	height: 19px;
+	top: 8px;
+	background: url("../images/weixin.png") no-repeat;
+	background-size: 100% 100%;
+}
+.home-page .contact-box .contact-item .email {
+	height: 13px;
+	top: 11px;
+	background: url("../images/email.png") no-repeat;
+	background-size: 100% 100%;
+}
+.home-page .contact-box .contact-item .phone {
+	height: 26px;
+	top: 5px;
+	background: url("../images/phone.png") no-repeat;
+	background-size: 100% 100%;
+}
+.home-page .latest-item {
+	width: 230px;
+	margin: 0 auto;
+	line-height: 40px;
+}
+.home-page .latest-item a span {
+	width: 80px;
+	color: #333;
+	font-size: 14px;
+}
+.home-page .latest-item .domain-name {
+	width: 103px;
+	overflow: hidden;
+	margin-right: 5px;
+}
+.home-page .latest-item .renewal-time,
+.home-page .latest-item .sold {
+	color: #746666;
+}
+.home-page .latest-item .sold {
+	width:42px;
+}
+.home-page .news-item .sold {
+	width: 84px;
+	margin-right: 3px;
+}
+.home-page .news-item .domain-name {
+	width: 67px;
+	margin-right: 2px;
+}
+.home-page .news-item .renewal-time {
+	width: 74px
+}
+/*广告*/
+.home-page .advert-item a {
+	font-size: 14px;
+	color: #746666;
+}
 
+/*域名列表*/
+.domainList-page .result-box {
+	min-height: 1100px;
+}
+.domainList-page .result-box .price,
+.domainList-page .result-box .r-price,
+.domainList-page .result-box .r-renewal-time {
+	width: 124px;
+}
+.domainList-page .result-box .r-price {
+	color: #ff0000;
+}
+.domainList-page .section .search-bar {
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	font-size: 13px;
+	color: #333;
+	background-color: #fff;
+}
+.domainList-page .section .search-bar span {
+	width: 98px;
+	text-align: center;
+	cursor: pointer;
+}
+.domainList-page .section .search-bar span:hover {
+	border-bottom: 2px solid #2789ed;
+}
+.domainList-page .section .line1 {
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+.domainList-page .line1 input {
+	padding: 5px;
+	width: 114px;
+	height: 13px;
+	border: 1px solid #ccc;
+	margin-right: 45px;
+}
+.domainList-page .line1 .keyWord {
+	margin-right: 0;
+}
+.domainList-page .line1 select {
+	width: 67px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 13px;
+	border-radius: 3px;
+	background-color: #eee;
+	margin: 0 45px 0 5px;
+}
+.domainList-page .section .like-classification-box h3 {
+	margin-bottom: 20px;
+}
+.domainList-page .section .form {
+	width: 815px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.domainList-page .form .price-input {
+	width: 43px;
+	margin-right: 0;
+}
+.domainList-page .form .price-input2 {
+	margin-right: 138px;
+}
+.domainList-page .line2 input[type="checkbox"] {
+	width: 13px;
+	margin-right: 2px;
+}
+.domainList-page .form .retract {
+	text-align: center;
+	cursor: pointer;
+}
+.domainList-page .form .retract-btn {
+	width: 50px;
+	padding: 5px;
+	margin: 0 auto;
+	border-radius: 3px;
+	background-color: #2789ed;
+	color: #fff;
+}
+/* 分页*/
+.ui-paging-container{color:#666;font-size: 12px;}
+.ui-paging-container ul{overflow: hidden;text-align: center;}
+.ui-paging-container ul,.ui-paging-container li{list-style: none;}
+.ui-paging-container li{display: inline-block;padding:3px 6px;margin-left: 5px;color:#666;}
+.ui-paging-container li.ui-pager{cursor: pointer; border:1px solid #ddd;border-radius: 2px;}
+.ui-paging-container li.ui-pager:hover,.ui-paging-container li.focus{background-color: #288df0;color:#FFFFFF;}
+.ui-paging-container li.ui-paging-ellipse{border:none;}
+.ui-paging-container li.ui-paging-toolbar{padding:0;}
+.ui-paging-container li.ui-paging-toolbar select{height:22px;border:1px solid #ddd;color: #666;}
+.ui-paging-container li.ui-paging-toolbar input{line-height: 20px; height:20px;padding:0;border:1px solid #ddd;text-align: center;width: 30px;margin:0 0 0 5px;vertical-align: middle;}
+.ui-paging-container li.ui-paging-toolbar a{vertical-align: middle; text-decoration: none;display: inline-block;height:20px;border:1px solid #ddd;vertical-align: top;border-radius: 2px;line-height: 20px;padding:0 3px;cursor: pointer;margin-left: 5px;color: #666;}
+.ui-paging-container li.ui-pager-disabled,.ui-paging-container li.ui-pager-disabled:hover{background-color: #f6f6f6;;cursor: default;border:none;color:#ddd;}
 
-
-
-
-
-
-
-
-
+/* 域名详情 */
+.domainDetial-page .domain-tit {
+	width: 825px;
+	margin: 0 auto;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.domainDetial-page .domain-tit>div {
+	font-size: 27px;
+	color: #333;
+}
+.domainDetial-page .domain-tit p {
+	line-height: 27px;
+	font-size: 16px;
+}
+.domainDetial-page .domain-tit .fr {
+	margin-top: 38px;
+}
+.domainDetial-page .domain-name {
+	margin-top: 48px;
+	font-weight: bold;
+}
+.domainDetial-page .domain-name-val {
+	margin-top: 52px;
+	width: 400px;
+	overflow: hidden;
+	font-weight: bold;
+}
+.domainDetial-page .section .domain-des {
+	width: 782px;
+	margin: 0 auto;
+}
+.domainDetial-page .section .domain-des {
+	line-height: 30px;
+	font-size: 17px;
+	color: #333;
+}
+.domainDetial-page .section .detial-price {
+	color: #ff0000;
+	margin-right: 5px;
+}
+.domainDetial-page .section .left-des {
+	width: 538px;
+	overflow: hidden;
+	margin-top: 32px;
+}
+.domainDetial-page .section .btn-group {
+	margin: 25px 0 43px 52px;
+}
+.domainDetial-page .btn-group button {
+	width: 114px;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #797979;
+}
+.domainDetial-page .btn-group .btn1 {
+	margin-right: 26px;
+}
+.domainDetial-page .section .right-des img {
+	margin: 20px 0 34px 0;
+}
+.domainDetial-page .share-icon {
+	position:relative;
+	font-size: 17px;
+	line-height: 32px;
+}
+.domainDetial-page .share-icon .icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin: 6px 7px 0 0;
+	cursor: pointer;
+}
+.domainDetial-page .share-icon .icon-xweibo {
+	margin-left: 35px;
+	background: url("../images/weibo.png") no-repeat;
+	background-size: 100% 100%;
+}
+.domainDetial-page .share-icon .icon-zone {
+	margin-left: 56px;
+	background: url("../images/zone.png") no-repeat;
+	background-size: 100% 100%;
+}
+.domainDetial-page .share-icon .icon-tweibo {
+	margin-left: 77px;
+	background: url("../images/w.png") no-repeat;
+	background-size: 100% 100%;
+}
+.domainDetial-page .share-icon .icon-weixin {
+	margin-left: 98px;
+	background: url("../images/weixin-smallIcon.png") no-repeat;
+	background-size: 100% 100%;
+}
+.domainDetial-page .introduction-box {
+	width: 760px;
+	margin: 0 auto;
+	padding-bottom: 48px;
+	border-top: 1px solid #e4e4e4;
+}
+.domainDetial-page .introduction-box h4 {
+	line-height: 62px;
+	font-size: 18px;
+	color: #333;
+}
+.domainDetial-page .introduction-box .detial-intro {
+	margin-bottom: 14px;
+	line-height: 17px;
+	font-size: 13px;
+}
+/* 新闻列表 */
+.news-page .section-left {
+	width: 868px;
+	margin: 0 auto;
+}
+.news-page .tab-list {
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.news-page .tab-list li {
+	width: 113px;
+	height: 48px;
+	line-height: 48px;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.news-page .section-left .l-panel {
+	padding: 9px 0 9px 8px;
+}
+.news-page .tab-list .active {
+	color: #fff;
+	background-color: #1681f1;
+}
+.news-page ul .list-list li {
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.news-page ul .list-list .r-panel {
+	margin-left: 18px;
+	color: #333;
+}
+.news-page ul .list-list .r-panel h2 {
+	margin-top: 9px;
+	line-height: 26px;
+	font-size: 19px;
+}
+.news-page ul .list-list .r-panel p {
+	line-height: 24px;
+}
+.news-page ul .list-list .r-panel .dateAndVolume {
+	line-height: 40px;
+	font-size: 13px;
+	color: #cdd3dd;
+}
+.news-page ul .list-list .r-panel .date {
+	margin-right: 48px;
+}
 
 
 

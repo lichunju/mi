@@ -19,6 +19,9 @@
 .section .main-foot {
     width: 1156px;
     margin: 0 auto;
+    margin-top: 20px;
+    padding: 28px 22px 15px 22px;
+    background-color: #fff;
 }
 .head .head-nav {
     width: 100%;
@@ -67,10 +70,8 @@
 .head .nav-item:hover {
     background-color: #237bd5;
 }
-
-.section .main-foot {
-    padding: 28px 22px 15px 22px;
-    background-color: #fff;
+.head .avtive {
+    background-color: #237bd5;
 }
 .section .main-foot-tit {
     color: #ff4800;
@@ -85,6 +86,15 @@
     line-height: 42px;
     font-size: 14px;
     color: #333;
+}
+.section .btn {
+    height: 34px !important;
+    line-height: 34px !important;
+    padding: 0 10px !important;
+    margin-top: 4px !important;
+    color: #fff !important;
+    background-color: #2789ed !important;
+    border-radius: 3px !important;
 }
 /*foot*/
 .foot {
